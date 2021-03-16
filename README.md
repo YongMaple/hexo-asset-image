@@ -1,15 +1,15 @@
 # hexo-asset-image
 
 
-Give asset image in hexo a absolutely path automatically
+自动为hexo中的图片提供绝对路径
 
-# Usege
+# 使用
 
 ```shell
 npm install hexo-asset-image --save
 ```
 
-# Example
+# 例子
 
 ```shell
 MacGesture2-Publish
@@ -19,10 +19,10 @@ MacGesture2-Publish
 MacGesture2-Publish.md
 ```
 
-Make sure `post_asset_folder: true` in your `_config.yml`.
+修改`_config.yml`中的`post_asset_folder: true`
 
-Just use `![logo](logo.jpg)` to insert `logo.jpg`.
+hexo new post [title] 后，会在_posts文件夹下生成同名文件夹，在需要插入图片的地方写`![logo](logo.jpg)`，将插入[title]文件夹下`logo.jpg`.
 
-# History
+# fork自https://github.com/xcodebuild/hexo-asset-image
 
-2018-04-18: support hexo-abbrlink
+# 修复了bug
